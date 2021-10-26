@@ -14,7 +14,7 @@ export default function App() {
   return (
     <View style={{flex:1}}>
       <NavigationContainer>
-        <MainNavigator.Navigator initialRouteName="login">
+        <MainNavigator.Navigator screenOptions={{headerShown:false}} initialRouteName="login">
            <MainNavigator.Screen name="login" component={login} />
            <MainNavigator.Screen name="Home" component={Home} />
            <MainNavigator.Screen name="checkOut" component={checkOut} />
